@@ -24,7 +24,7 @@ export const state = () => ({
     } 
     
 }
-await axios.get(`${process.env.apiURL}transactions`,auth).then(result => {
+await axios.get(`${process.env.API_URL}transactions`,auth).then(result => {
 commit('ALL_TRANSACTIONS', { transactions: result.data.data })
 })
     },
@@ -40,7 +40,7 @@ commit('ALL_TRANSACTIONS', { transactions: result.data.data })
     }
     
 
-   await axios.post(`${process.env.apiURL}filter-date`,{
+   await axios.post(`${process.env.API_URL}filter-date`,{
       dateStart: dateStart,
       dateEnd: dateEnd,
       service_id: 0
