@@ -7,9 +7,9 @@ export default {
     // PROD_API: '/proxy'
     
   },
-  router: {
-    base: '/PJCC/'
-  },
+  // router: {
+  //   base: '/PJCC/'
+  // },
   mode: 'universal',
   /*
   ** Headers of the page
