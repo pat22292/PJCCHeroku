@@ -1,12 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
-// require('dotenv').config()
+require('dotenv').config()
 
 export default {
-  env: {
-    apiURL: 'https://d68cc69e.ngrok.io/pjcc/',
-    // PROD_API: '/proxy'
+  // env: {
+  //   apiURL: 'https://d68cc69e.ngrok.io/pjcc/',
+  //   // PROD_API: '/proxy'
     
-  },
+  // },
   // router: {
   //   base: '/PJCC/'
   // },
@@ -45,7 +45,7 @@ export default {
   */
   buildModules: [
     '@nuxtjs/vuetify',
-    // '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv'
     // ['@nuxtjs/dotenv', { runtime: false }]
   ],
   
